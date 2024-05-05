@@ -1,3 +1,5 @@
+This repo is a starter template for building dockerized full-stack applications utilizing Django and React. 
+
 ## Setup
 
 ### Build the services
