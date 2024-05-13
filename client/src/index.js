@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { SnackbarProvider } from 'notistack';
 import { Slide } from '@mui/material';
+import "@fontsource/poppins"; // Defaults to weight 400
 
 import './index.css';
 import App from './App';

@@ -14,3 +14,18 @@ class BaseModel(models.Model):
 
     class Meta:
         abstract = True
+
+
+class AppTheme(models.Model):
+    name = models.CharField(max_length=50, null=True)
+    primary = models.CharField(max_length=7)
+    secondary = models.CharField(max_length=7, null=True)
+    background = models.CharField(max_length=7)
+    font_color = models.CharField(max_length=7, default="FFF")
+    header_font_color = models.CharField(max_length=7, default="FFF")
+
+    class Meta:
+        ordering = ("-name",)
+
+    def __str__(self):
+        return self.name

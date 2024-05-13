@@ -1,13 +1,13 @@
 import { createTheme } from '@mui/material/styles';
 import { blueGrey } from '@mui/material/colors';
 
-export const themeLight = createTheme({
+export const themeOne = createTheme({
     palette: {
       primary: {
-        main: '#000'
+        main: '#D9ABA9'
       },
       secondary: {
-        main: '#D0D0D0'
+        main: '#E4C0C4'
       },
       background: {
         default: blueGrey[50],
@@ -20,7 +20,7 @@ export const themeLight = createTheme({
     },
   });
 
-  export const themeDark = createTheme({
+  export const themeTwo = createTheme({
     palette: {
       primary: {
         main: '#272727'

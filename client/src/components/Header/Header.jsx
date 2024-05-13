@@ -40,7 +40,7 @@ export default function Header({ user, logout, darkMode, handleDarkMode }) {
               sx={{
                 fontWeight: 700,
                 letterSpacing: '.5rem',
-                color: theme.palette.background.paper,
+                color: theme.palette.header_font_color,
                 textDecoration: 'none',
               }}
               >
@@ -74,6 +74,7 @@ export default function Header({ user, logout, darkMode, handleDarkMode }) {
                 >
                   <MenuItem key={1}>
                     <FormControlLabel
+                      sx={{ margin: 0 }}
                       label="Dark mode"
                       labelPlacement="start"
                       control={<DarkModeSwitch />}

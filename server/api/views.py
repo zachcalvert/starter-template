@@ -6,6 +6,8 @@ from rest_framework.views import APIView
 
 from accounts.models import User
 from api import serializers
+from core.models import AppTheme
+
 
 logger = logging.getLogger(__name__)
 
@@ -37,3 +39,9 @@ class UserViewSet(viewsets.ModelViewSet):
             return User.objects.all()
 
         return User.objects.filter(id=user.id)
+
+
+class AppThemeViewSet(viewsets.ModelViewSet):
+    queryset = AppTheme.objects.all()
+    serializer_class = serializers.AppThemeSerializer
+    permission_classes = []
