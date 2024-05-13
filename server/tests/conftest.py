@@ -3,8 +3,16 @@ from django.contrib.auth import get_user_model
 from django.test import Client
 from rest_framework.test import APIClient
 
+from core.models import AppTheme
+
+
 User = get_user_model()
 
+
+@pytest.fixture
+def app_theme():
+    theme = AppTheme.objects.create(name="Theme one")
+    yield theme
 
 @pytest.fixture
 def api_user():
