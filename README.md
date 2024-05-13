@@ -1,5 +1,8 @@
 This repo is a starter template for building dockerized full-stack applications utilizing Django and React. 
 
+![Screenshot 2024-05-13 at 9 05 55 AM](https://github.com/zachcalvert/starter-template/assets/9372390/0b7f5cff-c5ba-4c00-b6ad-23d315b3b7c9)
+
+
 ## Setup
 
 ### Build the services
